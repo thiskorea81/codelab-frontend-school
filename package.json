@@ -1,0 +1,30 @@
+{
+  "name": "codelab-frontend-school",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CodeLab — 프론트엔드 스쿨: 한국어 프론트엔드·백엔드(Node.js) 강의 사이트",
+  "scripts": {
+    "dev": "concurrently -n client,server \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "vite",
+    "dev:server": "node server/index.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@flow-js/garmin-connect": "^1.6.25",
+    "express": "^5.3.0",
+    "fast-xml-parser": "^5.12.0",
+    "leaflet": "^1.9.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-leaflet": "^4.2.1",
+    "react-router-dom": "^6.26.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "concurrently": "^10.0.6",
+    "vite": "^5.4.0"
+  }
+}
